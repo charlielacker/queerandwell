@@ -1,0 +1,18 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --maincolor: #39564f;
+    --secondarycolor: #5d395f;
+    --tan: #fae7c8;
+    --lightgreen: #96aaa5;
+}
+
+
+/*Typography*/
+html {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var (--black);
+}
