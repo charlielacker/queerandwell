@@ -7,6 +7,11 @@
     --lightgreen: #96aaa5;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 
 /*Typography*/
 html {
@@ -19,13 +24,42 @@ html {
 
 h1 {
     font-size: 4rem;
-        margin-bottom: 1.75rem;
-        margin-top: .75rem;
-        line-height: 1.7rem;
+    margin-bottom: 1.75rem;
+    margin-top: .75rem;
+    line-height: 2.5rem;
 }
 
 h2{
-    font-size: 1.5rem;
-    margin-bottom: .75rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     margin-top: 1.5rem;
+    line-height: 1rem;
 }
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    line-height: 1rem;
+}
+
+h4{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+/*Layout*/
+
+header{
+    background-color: var(--lightgreen);
+    position: relative;
+    top: -2rem;
+}
+img.Logo {
+    max-width: 12rem;
+    margin: 0 auto 0 auto;
+    padding: .75rem .5rem .75rem .5rem;
+  }
