@@ -53,13 +53,94 @@ h5{
 
 /*Layout*/
 
-header{
-    background-color: var(--lightgreen);
+header.top{
+    background-color: var(--maincolor);
     position: relative;
     top: -2rem;
+    padding: 1rem;
+    z-index: 999;
+    display: inline-grid;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-items: space-between;
 }
+
+div.headerbox{
+    background-color: var(--white);
+    border-radius: 50px;
+    z-index: 1000;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+nav.main_menu{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav ul li{
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
 img.Logo {
     max-width: 12rem;
     margin: 0 auto 0 auto;
-    padding: .75rem .5rem .75rem .5rem;
+    padding: .25rem .5rem .25rem .5rem;
   }
+
+header.maincontent{
+    background-color: var(--white);
+}
+
+  ul{
+    margin: .25rem;
+    list-style-type: none;
+  }
+
+
+  footer {
+    display: flex;
+    margin: .5 auto .5 auto;
+    background-color:var(--maincolor);
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  footer ul li{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-self: center;
+  }
+
+img.footlogo{
+    max-width: 100px;
+    margin-left: 1rem;
+}
+
+li.logo{
+    justify-self: start;
+}
+
+img.insta{
+    max-width: 20px;
+}
