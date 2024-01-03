@@ -75,6 +75,10 @@ div.banner p{
     color: var(--white);
 }
 
+div.text p{
+    margin-bottom: 2rem;
+}
+
 footer p{
     color: var(--white);
 }
@@ -203,6 +207,30 @@ div.FAQ h2{
 
 div.FAQ ul li{
     padding: .8rem;
+}
+
+img.aboutselfie{
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+div.About{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+div.text{
+    max-width: 60%;
+}
+
+div.Certs{
+    padding: 1rem;
+}
+
+div.education{
+
 }
 
   footer {
