@@ -5,6 +5,7 @@
     --secondarycolor: #5d395f;
     --tan: #fae7c8;
     --lightgreen: #96aaa5;
+    --grey: #e2e2e2;
 }
 
 * {
@@ -40,6 +41,7 @@ h3{
     font-size: 1.5rem;
     margin-bottom: .5rem;
     line-height: 1rem;
+    font-weight: 600;
 }
 
 h4{
@@ -97,7 +99,6 @@ nav ul li{
     margin-right: 1rem;
 }
 
-
 img.Logo {
     max-width: 4rem;
     margin: 0 auto 0 1rem;
@@ -105,7 +106,6 @@ img.Logo {
     display: flex;
     justify-self: start;
   } 
-
 
 header.maincontent{
     background-color: var(--white);
@@ -129,7 +129,7 @@ div.Hero{
     align-items: center;
     justify-content: center;
     padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 2rem;
 }
 
 div.Hero header{
@@ -141,6 +141,36 @@ div.Hero header p{
     margin-left: .5rem;
 }
 
+div.Features{
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--grey);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+div.Features h2{
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+div.Features ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+div.Features ul li{
+    width: 40%;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+}
 
   footer {
     display: flex;
