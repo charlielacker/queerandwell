@@ -58,27 +58,15 @@ footer p{
 /*Layout*/
 
 header.top{
-    background-color: var(--maincolor);
+    background-color: var(--white);
     position: relative;
     top: -2rem;
     padding: 1rem;
     z-index: 999;
-    display: inline-grid;
+    display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
-}
-
-div.headerbox{
-    background-color: var(--white);
-    border-radius: 50px;
-    z-index: 1000;
-    width: 98%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-self: center;
-
 }
 
 nav.main_menu{
@@ -90,7 +78,6 @@ nav ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    
 }
 
 nav ul li{
@@ -98,10 +85,6 @@ nav ul li{
     margin-right: 1rem;
 }
 
-nav li a{
-    font-weight: 600;
-    color: var(--black);
-}
 
 img.Logo {
     max-width: 4rem;
@@ -132,7 +115,6 @@ header.maincontent{
     background-color:var(--maincolor);
     justify-content: space-between;
     align-items: center;
-
   }
 
   footer ul{
@@ -145,6 +127,7 @@ header.maincontent{
     margin-left: 1rem;
     margin-right: 1rem;
     align-self: center;
+    font-size: .8rem;
   }
 
 img.footlogo{
@@ -158,4 +141,37 @@ li.logo{
 
 img.insta{
     max-width: 20px;
+    display: flex;
+    align-self: baseline;
+}
+
+
+/* Links */
+
+nav a:link, nav a:visited{
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav a:active{
+    text-decoration: underline;
+}
+
+footer a:link, footer a:visited{
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a:active{
+    text-decoration: underline;
 }
