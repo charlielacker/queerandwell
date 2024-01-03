@@ -24,7 +24,7 @@ html {
 
 h1 {
     font-size: 4rem;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
     margin-top: .75rem;
     line-height: 2.5rem;
 }
@@ -49,6 +49,18 @@ h4{
 
 h5{
     font-size: 1rem;
+}
+
+p.name{
+    text-transform: uppercase;
+    margin-left: .5rem;
+}
+
+p.pronouns{
+    text-transform: lowercase;
+    font-style: italic;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
 }
 
 footer p{
@@ -92,7 +104,8 @@ img.Logo {
     padding-top: .35rem;
     display: flex;
     justify-self: start;
-  }
+  } 
+
 
 header.maincontent{
     background-color: var(--white);
@@ -107,6 +120,27 @@ header.maincontent{
     max-width: 500px;
     border-radius: 100%;
   }
+
+div.Hero{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+div.Hero header{
+    max-width: 40%;
+    margin-right: 3rem;
+}
+
+div.Hero header p{
+    margin-left: .5rem;
+}
+
 
   footer {
     display: flex;
