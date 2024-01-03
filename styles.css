@@ -46,7 +46,9 @@ h3{
 
 h4{
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+
 }
 
 h5{
@@ -170,6 +172,20 @@ div.Features ul li{
     background-color: var(--white);
     padding: 1rem;
     border-radius: 10px;
+}
+
+div.FAQ{
+    padding: 2rem;
+    display: flex;
+}
+
+div.FAQ h2{
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+
+div.FAQ ul li{
+    padding: .8rem;
 }
 
   footer {
