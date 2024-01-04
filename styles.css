@@ -50,6 +50,12 @@ h3.steps{
     margin-bottom: 1rem;
 }
 
+h3.tier{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    line-height: 1rem;
+}
+
 h4{
     font-size: 1rem;
     line-height: 1.2rem;
@@ -57,8 +63,15 @@ h4{
 
 }
 
+h4.dollar{
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
 h5{
     font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
 }
 
 p.name{
@@ -306,6 +319,48 @@ div.Services ol li{
    align-items: center;
    flex-direction: column;
    margin-top: 1rem;
+}
+
+div.Pricing{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.Pricing p.description{
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+div.Pricing ol{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+div.Pricing ol li{
+    padding: 1rem;
+    background-color: var(--grey);
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: center;
+    align-items: center;
+}
+
+div.tier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 2rem;
 }
 
   footer {
