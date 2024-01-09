@@ -27,20 +27,20 @@ h1 {
     font-size: 4rem;
     margin-bottom: 1.5rem;
     margin-top: .75rem;
-    line-height: 2.5rem;
+    line-height: 5rem;
 }
 
 h2{
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
-    line-height: 1rem;
+    line-height: 2.5rem;
 }
 
 h3{
     font-size: 1.5rem;
     margin-bottom: .5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
     font-weight: 600;
 }
 
@@ -86,14 +86,6 @@ p.pronouns{
     margin-left: .5rem;
 }
 
-div.banner h2{
-    color: var(--white);
-}
-
-div.banner p{
-    color: var(--white);
-}
-
 div.text p{
     margin-bottom: 2rem;
 }
@@ -136,6 +128,7 @@ header.top{
 nav.main_menu{
     display: flex;
     flex-direction: row;
+    justify-self: flex-end;
 }
 
 nav ul{
@@ -239,6 +232,7 @@ div.FAQ{
 div.FAQ h2{
     margin-bottom: 1.5rem;
     line-height: 2.2rem;
+    margin-right: 1rem;
 }
 
 div.FAQ ul li{
@@ -246,8 +240,9 @@ div.FAQ ul li{
 }
 
 img.aboutselfie{
-    max-width: 400px;
+    max-width: 100%;
     border-radius: 10px;
+    max-height: 500px;
 }
 
 div.About{
@@ -255,10 +250,12 @@ div.About{
     padding: 1rem;
     justify-content: space-around;
     margin-bottom: 1rem;
+    align-items: center;
 }
 
 div.text{
     max-width: 60%;
+    margin-right: 1rem;
 }
 
 div.Certs{
@@ -296,7 +293,7 @@ div.Services{
     align-items: center;
 }
 
-div.Services p.description{
+p.description{
     max-width: 70%;
 }
 
@@ -363,6 +360,18 @@ div.tier{
     padding-right: 2rem;
 }
 
+div.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+div.contact p{
+    text-align: center;
+}
+
   footer {
     display: flex;
     padding-top: 1rem;
@@ -370,6 +379,19 @@ div.tier{
     background-color:var(--maincolor);
     justify-content: space-between;
     align-items: center;
+  }
+
+  footer.contact {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color:var(--maincolor);
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 
   footer ul{
@@ -448,6 +470,60 @@ a.button:active{
     margin-bottom: .5rem;
 }
 
+a.email:link, a.email:visited{
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+a.email:hover{
+    color: var(--black);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+a.email:active{
+    color: var(--black);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+a.interest:link, a.interest:visited{
+    background-color: var(--secondarycolor);
+    color: var(--white);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+a.interest:hover{
+    background-color: var(--lightgreen);
+    color: var(--black);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+a.interest:active{
+    background-color: var(--lightgreen);
+    color: var(--black);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
 footer a:link, footer a:visited{
     color: var(--white);
     text-decoration: none;
@@ -459,4 +535,153 @@ footer a:hover{
 
 footer a:active{
     text-decoration: underline;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 650px){
+    header.top{
+        padding-bottom: 0;
+    }
+    
+    nav.main_menu ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav.main_menu a{
+        font-size: 1rem;
+    }
+
+    div.hero h1{
+        margin-top: 0;
+    }
+
+    div.banner {
+        text-align: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer ul{
+        flex-direction: column;
+    }
+
+    a.email:link, a.email:visited{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+   img.selfie{
+    margin-top: 2rem;
+   }
+   
+    div.FAQ{
+        flex-direction: column;
+    }
+
+    div.FAQ h2{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    div.Features h2{
+        text-align: center;
+    }
+    
+    div.Features{
+        padding: 1rem;
+        margin-top: 1rem;
+        background-color: var(--grey);
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    div.Features ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    div.Features ul li{
+        width: 95%;
+        background-color: var(--white);
+        padding: 1rem;
+        border-radius: 10px;
+        align-self: center;
+    }
+
+    div.Hero{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: .5rem;
+        padding-bottom: 2rem;
+        align-content: center;
+    }
+    
+    div.Hero header{
+        max-width: 100%;
+        text-align: center;
+        align-self: center;
+        margin-right: 0;
+    }
+
+    div.About{
+        flex-direction: column;
+    }
+
+    div.text{
+        max-width: 100%;
+    }
+
+    div.education{
+        max-width: 100%;
+    }
+
+    p.description{
+        max-width: 100%;
+    }
+
+    div.Pricing p.description{
+        max-width: 100%;
+    }
+
+    div.Pricing ol li{
+        flex-direction: column;
+    }
+
+    div.tier{
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    img.selfie{
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    div.Services ol{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    div.Services ol li{
+       width: 100%;
+    }
 }
