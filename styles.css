@@ -358,6 +358,7 @@ div.tier{
     align-items: center;
     padding-left: 1rem;
     padding-right: 2rem;
+    min-width: 12rem;
 }
 
 div.contact{
